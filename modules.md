@@ -28,6 +28,8 @@ page](https://github.com/nodecopter/nodecopter.com/edit/gh-pages/modules.md).
 * [ardrone-webflight](http://eschnou.github.io/ardrone-webflight/): Browser based remote control environment easily extensible via plugins
 
 <section>
+
+
   <h2 id="npm-modules"><a href="#npm-modules">NodeCopter Modules on npm</a></h2>
   <div class="modules-loading">
     <p>Loading modules...</p>
@@ -36,3 +38,33 @@ page](https://github.com/nodecopter/nodecopter.com/edit/gh-pages/modules.md).
   <ul class="modules-all"></ul>
   <p><small><i>Module must be on npm with `nodecopter` in the name, description or as a keyword.</i></small></p>
 </section>
+
+{
+  "name": "drone-joystick",
+  "description": "Control AR.Drones using any SDL-compatible Joystick (PS3 Sixaxis, etc.)",
+  "keywords": [
+    "sdl",
+    "AR.Drone",
+    "ar",
+    "drone",
+    "controller",
+    "joystick",
+    "ps3",
+    "sixaxis"
+  ],
+  "version": "0.1.0",
+  "author": "Nathan Rajlich <nathan@tootallnate.net> (http://tootallnate.net)",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/TooTallNate/node-drone-joystick.git"
+  },
+  "bin": {
+    "drone-joystick": "bin/drone-joystick"
+  },
+  "dependencies": {
+    "ar-drone": "~0.0.5",
+    "commander": "~1.1.1",
+    "debug": "~0.7.0",
+    "sdl": "~0.1.8"
+  }
+}
